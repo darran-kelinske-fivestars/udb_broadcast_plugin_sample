@@ -67,7 +67,9 @@ function createSocket(type, port) {
 }
 
 function onMessage(id, msg, remoteAddress, remotePort) {
+        console.log("darran - registering message handler");
     var socket = Socket.sockets[id];
+    console.log("darran - we got a message" +msg);
     if (socket && 'message' in socket._eventHandlers) {
         socket._eventHandlers['message'].call(null, msg, { address: remoteAddress, port: remotePort });
     }
