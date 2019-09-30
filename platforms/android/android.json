@@ -1,0 +1,47 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Dgram\"><param name=\"android-package\" value=\"org.apache.cordova.dgram.Dgram\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.fivestars.udp_broadcast_plugin"
+    },
+    "cordova-plugin-dgram": {
+      "PACKAGE_NAME": "com.fivestars.udp_broadcast_plugin"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-dgram.dgram",
+      "file": "plugins/cordova-plugin-dgram/www/dgram.js",
+      "pluginId": "cordova-plugin-dgram",
+      "clobbers": [
+        "dgram"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-dgram": "0.1.5"
+  }
+}
