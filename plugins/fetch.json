@@ -6,13 +6,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "cordova-plugin-dgram": {
-    "source": {
-      "type": "registry",
-      "id": "https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram"
-    },
-    "is_top_level": true,
-    "variables": {}
   }
 }

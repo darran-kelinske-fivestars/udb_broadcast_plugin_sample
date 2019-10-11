@@ -22,14 +22,41 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
+
+
     // deviceready Event Handler
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        var id = dgram.createSocket('broadcast-udp4', 7777)._socketId;
-        console.log("darran - this id is:" +id);
-        dgram._onMessage(id, {}, '192.168.1.123', 7777)
+
+        var plugin = "Dgram";
+
+        var testFunction = function() {
+                console.log("woot");
+            };
+
+            var onSuccess = (messageObject) => {
+                console.log("onsuccess " +messageObject.message);
+            };
+
+                        var connectSuccess = function() {
+                                cordova.exec(onSuccess, function(err) {}, plugin, "onMessage", null);
+
+                        };
+            //
+//
+            var onError = function() {
+                console.log("onerror");
+            };
+
+//        socket.on('send', onSuccess);
+//        socket.on('message', onMessageSuccess);
+//        socket.on('error', onError);
+
+        var openPayload = [7777, true];
+
+        cordova.exec(connectSuccess, function(err) {}, plugin, "open", openPayload);
     },
 
 };
