@@ -11,6 +11,10 @@
             {
               "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Dgram\"><param name=\"android-package\" value=\"org.apache.cordova.dgram.Dgram\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -20,11 +24,15 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fivestars.udp_broadcast_plugin"
+    },
+    "cordova-plugin-dgram": {
+      "PACKAGE_NAME": "com.fivestars.udp_broadcast_plugin"
     }
   },
   "dependent_plugins": {},
   "modules": [],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-dgram": "0.1.5"
   }
 }

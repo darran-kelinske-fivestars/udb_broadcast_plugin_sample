@@ -37,11 +37,13 @@ var app = {
             };
 
             var onSuccess = (messageObject) => {
+                console.log("received message");
                 console.log("onsuccess " +messageObject.message);
             };
 
                         var connectSuccess = function() {
-                                cordova.exec(onSuccess, function(err) {}, plugin, "onMessage", null);
+                                console.log("inside connect success");
+                                cordova.exec(onSuccess, function(err) {}, plugin, "listen", null);
 
                         };
             //

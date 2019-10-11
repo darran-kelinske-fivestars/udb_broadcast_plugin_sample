@@ -1,0 +1,53 @@
+{
+  "_from": "git+https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram.git",
+  "_id": "cordova-plugin-dgram@0.1.6",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-dgram",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram",
+    "rawSpec": "https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram",
+    "saveSpec": "git+https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram.git",
+    "fetchSpec": "https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram.git#143d0787354cefb9303f46ca0ae4e183867e17ca",
+  "_spec": "https://github.com/darran-kelinske-fivestars/cordova-plugin-dgram",
+  "_where": "/source/source/fivestars/udp_broadcast_plugin",
+  "author": {
+    "name": "Andreas Scherer"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalcatnip/cordova-plugin-dgram/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-dgram",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova-Plugin which supports node.js dgram API",
+  "homepage": "https://github.com/digitalcatnip/cordova-plugin-dgram#readme",
+  "keywords": [
+    "UDP",
+    "Datagram",
+    "dgram",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-dgram",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalcatnip/cordova-plugin-dgram.git"
+  },
+  "version": "0.1.6"
+}
